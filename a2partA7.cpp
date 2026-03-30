@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    int day;
+    std::cout << "Enter a number (1-7) for the day of the week: ";
+    std::cin >> day;
+    std::string dayName;
+
+    switch (day) {
+        case 1:
+            dayName = "Monday";
+            break;
+        case 2:
+            dayName = "Tuesday";
+            break;
+        case 3:
+            dayName = "Wednesday";
+            break;
+        case 4:
+            dayName = "Thursday";
+            break;
+        case 5:
+            dayName = "Friday";
+            break;
+        case 6:
+            dayName = "Saturday";
+            break;
+        case 7:
+            dayName = "Sunday";
+            break;
+        default:
+            dayName = "Invalid day number";
+            break;
+    }
+
+    std::cout << "The day is: " << dayName << std::endl;
+
+    return 0;
+}
